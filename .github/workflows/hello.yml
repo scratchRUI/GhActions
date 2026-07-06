@@ -1,0 +1,8 @@
+name: Hello
+on: push
+jobs:
+    hello:
+        runs-on: ubuntu-latest
+        steps:
+            - run: echo "Hello World"
+              uses: actions/hello-world-docker-action@v4       #アクションの呼び出し（本はv4）
